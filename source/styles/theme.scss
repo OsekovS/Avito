@@ -1,0 +1,113 @@
+
+body{
+    box-sizing: border-box;
+}
+.theme_color_project-default{
+    --background-color:#FFFFFF;
+    --border-color: #000000;
+    --color: #000000;
+    --sec-color: rgba(0, 0, 0, 0.6);
+    --add-color: rgba(0, 0, 0, 0.3);
+    --ref-color:#0070f0;
+}
+.theme_color_project-default:hover{
+    --border-color:#0056B3;
+}
+
+
+.theme_color_project-brand{
+    --background-color:#0070f0;
+    --border-color: #FFFFFF;
+    --color: #FFFFFF;
+    --sec-color: rgba(255, 255, 255, 0.6);
+    --add-color: rgba(255, 255, 255, 0.3);
+    --ref-color:#FFFFFF;
+ /*  $background-color:#0070f0;*/
+    
+}
+.theme_color_project-brand:hover{
+    --border-color:#FFFFFF;
+}
+
+
+.theme_color_project-inverse{
+    --background-color:#000000;
+    --border-color: #FFFFFF;
+    --color: #FFFFFF;
+    --sec-color: rgba(255, 255, 255, 0.6);
+    --add-color: rgba(255, 255, 255, 0.3);
+    --ref-color:#0070f0;
+ 
+}
+.theme_color_project-inverse:hover{
+    --border-color:#FFFFFF;
+}
+
+.theme_color_project-warning{
+    --background-color:#FF9900;
+    --border-color: #FFFFFF;
+    --color: #FFFFFF;
+    --sec-color: rgba(255, 255, 255, 0.6);
+    --add-color: rgba(255, 255, 255, 0.3);
+    --ref-color:#FFF;
+
+}
+.theme_color_project-warning:hover{
+    --border-color:#FFFFFF;
+}
+
+
+.theme_color_megafon-brand{
+    --background-color:#1FA55D;
+    --border-color: #FFFFFF;
+    --color: #FFFFFF;
+    --sec-color: rgba(255, 255, 255, 0.6);
+    --add-color: rgba(255, 255, 255, 0.3);
+    --ref-color:#FFF;
+}
+.theme_color_megafon-brand:hover{
+    --border-color:#FFFFFF;
+}
+ 
+/*Модификации размеров*/
+.theme_size_default{
+    --font-size_s: 7px;
+    --line-height_s: 18px;
+    --font-size_m: 8px;
+    --line-height_m: 21px;
+    --font-size_l: 10px;
+    --line-height_l: 25px;
+    --font-size_xl: 11px;
+    --line-height_xl: 28px;
+    --font-size_xxl: 13px;
+    --line-height_xxl: 34px;
+}
+
+
+.theme_space_default{   
+    --padding_xxxs: 2px;
+    --padding_xxs: 4px;
+    --padding_xs: 8px;
+    --padding_s: 12px;
+    --padding_m: 16px;
+    --padding_l: 20px;
+    --padding_xl: 24px;
+    --padding_xxl: 32px;
+    --padding_xxxl: 40px;
+    --padding_xxxxl: 48px;
+    --padding_xxxxxl: 72px;
+ }
+ @media (max-width: 1144px) {
+    /*На экране с размером меньше 1144px
+     все блоки должны перестроиться один под другим.*/
+    body {background-color:salmon;}
+  }
+.theme_gap_small{
+    --gap: var(--padding_xxxl);
+    /*grid-column-gap*/
+}
+@media (max-width: 320px) {
+    /*На экране с размером меньше 1144px
+     все блоки должны перестроиться один под другим.*/
+     .theme_gap_small {--gap: var(--padding_m);}
+  }
