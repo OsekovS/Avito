@@ -4,7 +4,7 @@ import '../UiKit/CheckBoxButt/CheckBoxButt.js';
 import '../UiKit/HeadersFooters/Footer/Footer.js';
 import '../UiKit/PhotoCard/PhotoCard.js';
 // /import '../UiKit/RadioButt/RadioButt.js';
-import {countRabbits, workWithFilter} from '../UiKit/PhotoCard/PhotoCard.js';
+import {photoCardDynamic, workWithFilter} from './eventProcessor.js';
 import {getCookie, setCookie, deleteCookie} from "./cookie.js";
 import {GenerateCard,GenerateCurPhotoList} from "./CardGenerator.js";
 import {HttpGet} from "./DataLoader.js";
@@ -25,7 +25,7 @@ let curLinkArr;
 //параметр сортироки (none-по популярности)
 let sortParam='none';
 Content.onclick = function(event) {
-  let eventResult = countRabbits(); 
+  let eventResult = photoCardDynamic(); 
   if(!eventResult) return
   if(eventResult['result']=='ellite'){
     if(!(getCookie(eventResult["id"]))){
