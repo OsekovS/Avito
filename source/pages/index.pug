@@ -1,19 +1,35 @@
-<!DOCTYPE html>
-html
-head
-  meta(charset="utf-8")
-  title hover
-  body
-    div
-      p(class="theme_space_default theme_gap_small grid_col-gap-two-thirds aue")
-        a(class="" href="1.html") Ссылка 1
-      p(class="theme_space_default theme_gap_small grid_col-gap-full" href="2.html")
-        a(class="aue") Ссылка 2
-      p(class="theme_space_default theme_gap_small grid_row-gap-half" href="2.html")
-        a(class="" href="3.html") Ссылка 3
-    div(class="card")
-      div(class="card__content text_align-center")
-        p(class="text_align-size-s theme_size_default") аууее
-        p(class="theme_size_default text_align-size-xxl") ауиии
-      div(class="card__footer")
-      
+include ../UiKit/HeadersFooters/Header/Header.pug
+include ../UiKit/HeadersFooters/Footer/Footer.pug
+include ../UiKit/CheckBoxButt/CheckBoxButt.pug
+include ../UiKit/RadioButt/RadioButt.pug
+include ../UiKit/PhotoCard/PhotoCard.pug
+include ../UiKit/ClickButton/ClickButton.pug
+
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        body
+            +Header(['О нас','Как пользоваться Avito?','Соглашения'],['#','#','#'],'Header_Main',['#','#'])
+            div(class='SearchRoom__Content' id='mainWin')
+                .SearchRoom__ContentInterface
+                    div(class="SearchRoom__ContentInterface__Filter" id='Filter')
+                        +TextSection("H3",'Вам нужны:')
+                        +CheckBoxButt("",["Авто","Недвижимость","Фотоаппараты","Ноутбуки",'Избранное','Диапазон цен:'],["Smoke","Pets","Friends"],["s","d","a","d"])
+                        +TextSection("Body",'От:')
+                        input(type="text" size="7" id="minPrice")
+                        br
+                        +TextSection("Body",'До:')
+                        input(type="text" size="7" id="maxPrice")
+                        +TextSection("H3",'Сортировать по:')
+                        +RadioButt("",["Популярности","Цене",'Дате'],["none","price","date"],['1','2','3'])
+                        +ClickButton("Purple","Clicked","Применить фильтр",'HeaderReg')
+                    div(class='SearchRoom__ContentInterface__Basket' id='Basket')
+                .SearchRoom__ContentProducts
+                    +TextSection("H1",'Товары, которые мы для вас подобрали')
+                    ul(class="SearchRoom__Products" id='Content')
+        +Footer
+div(class='kostil(' style='display:none')
+    img(src=require("../img/svg/star.svg"))
+    img(src=require("../img/svg/star_border.svg"))
+    img(src=require("../img/svg/PhotoCardNext.svg"))
+    img(src=require("../img/svg/PhotoCardPrev.svg"))

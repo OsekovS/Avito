@@ -1,0 +1,101 @@
+.Footer{
+    min-width: 1440px;
+    margin: 0px !important;
+    min-height: 443px;
+    display: flex;
+    flex-direction: column !important;
+     .FooterContent{
+        background-color: white;
+        max-height: 372px;
+        max-width: 1440px;
+        margin-bottom: 1px;
+        display: flex;
+        padding-left: 138px;
+        padding-top: 98px;
+        padding-bottom: 100px;
+            .FooterContent__Logo{
+            width: 260px;
+            height: 156px;
+            // border:1px solid orange;
+            display: flex;
+            flex-direction: column;
+            .TextSection{
+                margin-top: 18px;
+                margin-left: 2px;
+                line-height: 24px;
+            }
+            a{    margin-left: 2px;
+                margin-top: 1px;}
+            }
+            .FooterContent__Column{
+            // border:1px solid orange;
+            padding-top: 5px;
+            ul{margin:0px;
+            padding:0px;}
+            ul li{list-style: none;
+                margin-top: 15px;}
+            }
+
+            .FooterContent__Column:nth-child(2){
+            width: 144px;
+            height: 168px;
+            margin-right: 57px;
+            margin-left: 39px;
+            }
+            .FooterContent__Column:nth-child(3){
+                width: 108px;
+                height: 168px;
+                // border:1px solid orange;        
+            }
+            .FooterContent__Column:nth-child(4){
+                width: 151px;
+                height: 130px;
+                margin-right: 49px;
+                margin-left: 92px;
+                // border:1px solid orange;
+            }
+            .FooterContent__SubWind{
+                width: 270px;
+                height:150px;
+                // border:1px solid orange;
+                display: flex;
+                flex-direction: column;
+                padding-top:2px;
+                .TextSection{display: block;
+                max-height: max-content;
+                line-height: 24px;}
+                .TextSection_H3{
+                    margin-bottom: 14px; 
+                }
+                .DropDown{
+                    .DropDown__Text{height: 22px;}
+                    .DropDown__Field{width:260px;}
+                }
+                // margin-bottom: 20px;
+            }
+    }
+    .FooterRightsLabels{
+        padding-left: 139px;
+        padding-right: 142px;
+        padding-top: 23px;
+    background-color: white;
+    height: 50px;
+    max-width: 1440px;
+    display: flex;
+    .TextSection{
+        margin-right: auto;
+        margin-top: 4px;
+    }
+    .FooterLabels{
+    
+        a{
+        width: 24px;
+        height: 24px;  
+    }
+    a:nth-child(1){margin-right:20px;}
+    a:nth-child(2){margin-right:21px;
+        width: 24px;
+        height: 24px;
+        }}
+    }
+}

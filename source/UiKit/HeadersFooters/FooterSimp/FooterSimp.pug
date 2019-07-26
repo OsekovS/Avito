@@ -1,0 +1,16 @@
+include ../../TextField/TextField.pug
+mixin FooterSimp(style)
+    div.FooterSimp
+        .FooterContent
+            section.FooterContent__Logo
+                a(href="#", class='Header_Logo')
+                    img(src=require("../../img/svg/ToxinLogo.svg"), alt='OurLogo')
+            +TextSection("Body",'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam') 
+            +TextSection("Body",'pellentesque aliquam curabitur cociis.') 
+            .FooterLabels
+                a(href="#", class='Header_Logo')
+                    img(src=require("../../img/svg/Footer_Twitter.svg"), alt='OurLogo')
+                a(href="#", class='Header_Logo')
+                    img(src=require("../../img/svg/Footer_Facebook.svg"), alt='OurLogo')
+                a(href="#", class='Header_Logo')
+                    img(src=require("../../img/svg/Footer_Instagram.svg"), alt='OurLogo')

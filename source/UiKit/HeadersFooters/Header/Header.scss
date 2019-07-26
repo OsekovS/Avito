@@ -1,0 +1,28 @@
+.Header{
+    height: 70px !important;
+    width: 100%;
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+    ul, li{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    ul{display:flex;    margin-top: 2px;}
+    ul li{margin-right: 21px;}
+
+     .ClickButton_HeaderReg{}
+    .ClickButton_HeaderLog{
+    margin-right: 20px;}
+}
+.Header_Main{
+    .Header_Logo img{
+        margin-right:90px;
+        margin-left: 95px;
+    }
+}

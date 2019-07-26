@@ -1,0 +1,42 @@
+include ../TextSection/TextSection.pug
+mixin CheckBoxButt(style,text,val,number)
+    div.CheckBoxButtGroup
+        section(class="CheckBoxButtWindow " +"CheckBoxButtWindow_"+style)
+            - for (var i=0; i<text.length; i++) {
+                section.CheckBoxButt_Boxes
+                    input(class="CheckBoxButt" type="checkbox" id="box-"+text[i])
+                    label(for="box-"+text[i] class="CheckBox")
+                    p: +TextSection("Body",text[i])
+            - }
+
+
+//-input(type="checkbox" id="box-"+i)
+        //-label(for="box-"+i)
+        //- +TextSection("Body",text[i])
+//-    input(type="checkbox" id="box-1")
+//-    label(for="box-1" class="label")=text
+//-        label(for="box-1" class="CheckBoxButt__Check")
+
+    //- section.CheckBoxButt
+    //-     if(check===true)
+    //-         input(type="checkbox" checked value=val class="CheckBoxButt__wind"+"") 
+    //-         if(style==="Rich")    
+    //-             +TextSection("Body-Serv",text,"")
+    //-         else 
+    //-             +TextSection("H3",text,"")
+    //-     else
+    //-         input(type="checkbox" value=val class="CheckBoxButt__wind"+"") 
+    //-         if(style==="Rich")    
+    //-             +TextSection("Body-Serv",text,"")
+    //-         else 
+    //-             +TextSection("H3",text,"")
+
+
+
+    //- if(check===true)
+    //-     input(type="checkbox" checked value=val class="CheckBoxButt__wind"+"") 
+    //-         if(style==="Rich")    
+    //-             +TextSection("Body-Serv",text,"")
+    //-         else 
+    //-             +TextSection("H3",text,"")
+    //- else

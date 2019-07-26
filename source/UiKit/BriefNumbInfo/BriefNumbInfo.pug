@@ -1,0 +1,10 @@
+include ../TextSection/TextSection.pug
+mixin BriefNumbInfo(FieldType,style,TopText,RightText,name,PlaceHolder,InnerText)
+    div(class="BriefNumbInfo")
+            section.NumberInfo    
+                +TextSection("H3",'№ ')
+                +TextSection("H2",'888')
+                +TextSection("H3",'люкс')
+            section.PriceInfo   
+                +TextSection("H3",'9 990₽ ')
+                +TextSection("Body",'в сутки')

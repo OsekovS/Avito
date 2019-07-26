@@ -1,0 +1,27 @@
+.BriefNumbInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .PriceInfo{
+        
+        .TextSection_H3{
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        .TextSection_Body{
+            font-size: 12px;
+        }
+    }
+    .NumberInfo{
+        .TextSection_H1{
+            margin-right:3px;
+        }
+        .TextSection_H3:first-child{
+            font-size:14px;
+        }
+        .TextSection_H3:last-child{
+            color: #BC9CFF;
+            margin-left: 4px;
+        }
+    }
+}

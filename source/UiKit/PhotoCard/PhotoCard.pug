@@ -1,0 +1,25 @@
+include ../TextField/TextField.pug
+//-include ../../GoNextPageButt/GoNextPageButt.pug
+//-include ../../ClickButton/ClickButton.pug
+include ../BriefNumbInfo/BriefNumbInfo.pug
+//-include ../../RateButton/RateButton.pug
+mixin PhotoCard(NumberOfRoom,PhotosSource)
+    div(class='PhotoCard', id='PhotoCard'+NumberOfRoom,src=PhotosSource)
+        div(class='PhotoCard_PhotoSet',CurrentPhoto='1')
+            div(class='ControlPanel_Previous')
+                img(src=require("../../img/svg/PhotoCardPrev.svg"), class="PhotoCardButton PhotoCardPrev", alt="Логотип")
+            div(class='ControlPanelRight')
+                div(class='ControlPanel_Next')
+                    img(src=require("../img/svg/PhotoCardNext.svg"), class="PhotoCardButton PhotoCardNext", alt="Логотип")
+                div(class='ControlPanel')
+                    section(class="PhotoCurrent_1 CurrentLable")
+                    - for (var i=2; i<5; i++) { 
+                    section(class="PhotoCurrent_"+i+" NotCurrentLable")
+                    - }
+        .PhotoCard_Info
+            +BriefNumbInfo
+            hr
+            .PhotoCard_Rating
+                //- +RateButton('3')
+                +TextSection("H3",'145')
+                +TextSection("Body",'Отзывов')

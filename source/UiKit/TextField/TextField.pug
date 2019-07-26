@@ -1,0 +1,12 @@
+include ../TextSection/TextSection.pug
+mixin TextField(FieldType,style,TopText,RightText,name,PlaceHolder,InnerText)
+    section(class="TextField"+" TextField-"+name+" TextField_"+style)
+        section(class="TextField__Text")
+            +TextSection("H3",TopText,"")
+            +TextSection("Body-Serv",RightText,"")
+        if(style==='Sub')
+            div( class="TextField__Field" name=name )
+                input(type="text", class="TextField__FieldText" name="Comment" placeholder=PlaceHolder value=InnerText) 
+                a(href="SubLink.html"): input(type="submit" class="TextField__FieldIcon" value="") 
+        else
+            input(type=FieldType, class="TextField__Field TextField__Field_"+style name="Comment" placeholder=PlaceHolder value=InnerText)

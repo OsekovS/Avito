@@ -1,0 +1,53 @@
+include ../../TextField/TextField.pug
+//-include ../../DropDown/DropDown.pug
+mixin Footer(style)
+    div.Footer
+        .FooterContent
+            section.FooterContent__Logo
+                a(href="#", class='Header_Logo')
+                    img(src=require("../img/svg/ToxinLogo.svg"), alt='OurLogo') 
+            section.FooterContent__Column
+                +TextSection("H3",'навигация')
+                ul 
+                    li
+                     +TextSection("Body",'О нас')
+                    li
+                     +TextSection("Body",'Новости')
+                    li
+                     +TextSection("Body",'Служба поддержки')
+                    li
+                     +TextSection("Body",'Услуги')
+            section.FooterContent__Column
+                +TextSection("H3",'о нас')
+                ul 
+                    li
+                     +TextSection("Body",'О сервисе')
+                    li
+                     +TextSection("Body",'Наша команда')
+                    li
+                     +TextSection("Body",'Вакансии')
+                    li
+                     +TextSection("Body",'Инвесторы')
+            section.FooterContent__Column
+                +TextSection("H3",'Служба поддержки')
+                ul 
+                    li
+                     +TextSection("Body",'Соглашения')
+                    li
+                     +TextSection("Body",'Сообщества')
+                    li
+                     +TextSection("Body",'Связь с ними')
+            section.FooterContent__SubWind
+             +TextSection("H3",'Подписка')
+             +TextSection("Body",'Получайте специальные предложения и новости сервиса')
+
+        .FooterRightsLabels
+            +TextSection("Body",'Copyright © 2019 Avito. Все права зачищены.')
+            .FooterLabels
+                a(href="#", class='Header_Logo')
+                    img(src=require("../img/svg/Footer_Twitter.svg"), alt='OurLogo')
+                a(href="#", class='Header_Logo')
+                    img(src=require("../img/svg/Footer_Facebook.svg"), alt='OurLogo')
+                a(href="#", class='Header_Logo')
+                    img(src=require("../img/svg/Footer_Instagram.svg"), alt='OurLogo')
+//-             +DropDown("Sub",["","","Email"],"","")

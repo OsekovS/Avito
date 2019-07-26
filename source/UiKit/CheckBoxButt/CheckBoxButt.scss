@@ -1,0 +1,73 @@
+  /*Checkboxes styles*/
+  //Скрываем настоящий чекбоксик
+  .CheckBoxButt { display: none; }
+  
+  .CheckBoxButt + label {
+    display: block;
+    position: relative;
+    padding-left: 29.74px;
+
+    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+   
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  //-input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+  /* Добавляем желаемый символ перед настоящим чекбоксиком */
+  .CheckBoxButt + label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #BC9CFF;
+    box-sizing: border-box;
+    border-radius: 4px; 
+    position: absolute;
+    left: 0;
+    top: 0px;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+  }
+
+  .CheckBoxButt:checked + label:before {
+    background:url('../../img/svg/Check.svg') no-repeat; 
+    width: 20px; height: 20px;  
+    //border:none;    
+    background-position: center;
+  }
+ 
+  .CheckBoxButtGroup{
+    height: 129px;
+    width: 222px;
+  }
+  
+  .CheckBoxButtWindow{
+    margin-top: 14px;
+    width: 222px;
+    height: 129.12px;
+    display: flex;
+  //justify-content: space-between;
+    flex-direction: column;
+
+    .CheckBoxButt_Boxes{
+      display: flex;
+    flex-direction: row;
+    max-height: 20px;
+    align-items: center;
+    margin-bottom: 10.56px;
+    }
+   
+
+}
+.TextSection{
+  line-height: 18px;
+}

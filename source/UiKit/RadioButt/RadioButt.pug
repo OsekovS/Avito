@@ -1,0 +1,12 @@
+include ../TextSection/TextSection.pug
+mixin RadioButt(style,text,val,num)
+    div.RadioButt
+        section(class="RadioButtWindow " +"RadioButtWindow_"+style)
+            form(action="handler.php")
+                - for (var i=0; i<text.length; i++) {
+                    section
+                      input(name='sortConfig' type="radio" class="radio" id="radio"+num[i] value=val[i])
+                      +TextSection("Body",text[i])
+                    //- label(for="radio"+num[i])
+                    //-    +TextSection("Body",text[i])
+                - }

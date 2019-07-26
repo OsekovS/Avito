@@ -12,24 +12,13 @@ const images = require('./webpack/images');
 const common = merge([
     {
         entry: {
-            // 'index': PATHS.source + '/pages/index/index.js',
-            // 'blog': PATHS.source + '/pages/blog/blog.js',
-            'theme': PATHS.source + '/styles/theme.js',
-            
-        },
-        entry: {
-            // 'index': PATHS.source + '/pages/index/index.js',
-            // 'blog': PATHS.source + '/pages/blog/blog.js',
             'index': PATHS.source + '/pages/index.js',
-            
         },
         output: {
-            
             path: PATHS.build,
             filename: '[name].js'
         },
         plugins: [
-    
              new HtmlWebpackPlugin({
                  filename: 'index.html',
                  chunks: ['index'],
@@ -37,7 +26,6 @@ const common = merge([
              }),
 
         ],
-    
     },
     pug(),
     sass(),

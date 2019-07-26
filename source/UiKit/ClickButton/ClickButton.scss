@@ -1,0 +1,59 @@
+
+.ClickButton{
+
+  padding-left: 6px;
+  padding-top: 2px;
+
+    width: 99px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+  }
+  .ClickButton_HeaderLog{
+    width: 87px;
+    height: 33px;
+  }
+  .ClickButton_HeaderReg{
+    width: 196px;
+    height: 33px;
+  }
+  
+  .ClickButton_Purple{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    
+    //display:inline-block;
+    .TextSection{
+        color: white;
+    }
+  }
+
+  .ClickButton_PurpleNotClicked{
+    opacity: 0.5;
+  }
+
+  .ClickButton_Bordered{
+   
+    //display:inline-block;
+    border: 2px solid #BC9CFF;
+    background: none;
+    .TextSection{
+        color: #BC9CFF;
+    }
+  }
+  .ClickButton_BorderedNotClicked{
+    border: solid 2px rgba(188,156,255,0.5);
+  }
+
+  .ClickButton_Simple{
+    
+    //display:inline-block;
+    background: none;
+    .TextSection{
+        color: #BC9CFF;
+    }
+  }
+  .ClickButton_SimpleNotClicked{
+    .TextSection{
+      color: black;
+  }
+  }

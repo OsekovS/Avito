@@ -1,0 +1,4 @@
+include ../TextSection/TextSection.pug
+mixin ClickButton(styleClass,val,text,geomClass)
+        button(class="ClickButton "+"ClickButton_"+styleClass + " ClickButton_"+styleClass+val +" ClickButton_"+geomClass, value=val)
+            +TextSection("H3",text)

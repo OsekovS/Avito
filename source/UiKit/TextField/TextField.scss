@@ -1,0 +1,105 @@
+.TextField{
+    width: 320px;
+    display:block;
+    text-transform: uppercase;
+    .TextField__Field{
+        background: white;
+        height: 44px;
+        width: 320px;
+        //box-sizing: border-box;
+        border-radius: 4px; 
+        padding-left:15px;
+        font-family: 'NewMontserrat';
+        color: rgba(31, 32, 65, 0.5);        
+    }
+    .TextField__Field:focus{
+        font-family: 'NewMontserrat';
+        color: rgba(31, 32, 65, 0.75);
+    }
+    .TextField__Text{
+        display: flex;
+        max-height: 23px;
+        justify-content: space-between;
+    }
+}
+.TextField_default{
+    height: 67px;
+    .TextField__Field{
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        padding-top: 0px;
+        color: rgba(31, 32, 65, 0.5);
+        }  
+
+    //КолХоЗ
+    .TextField__Field::-webkit-input-placeholder {color:rgba(31, 32, 65, 0.25);}
+    .TextField__Field::-moz-placeholder          {color:rgba(31, 32, 65, 0.25);}/* Firefox 19+ */
+    .TextField__Field:-moz-placeholder           {color:rgba(31, 32, 65, 0.25);}/* Firefox 18- */
+    .TextField__Field:-ms-input-placeholder      {color:rgba(31, 32, 65, 0.25);}
+
+    .TextField__Field:focus::-webkit-input-placeholder {color: transparent}
+    .TextField__Field:focus::-moz-placeholder {color: transparent}
+    .TextField__Field:focus::-moz-placeholder {color: transparent}
+    .TextField__Field:focus::-ms-input-placeholder {color: transparent}
+
+    .TextField__Field:focus{border: 1px solid rgba(31, 32, 65, 0.5);}
+
+
+    .TextField__Text{
+      
+        .TextSection_H3{
+            
+            padding-bottom: 5px;
+            padding-top: 3px;  
+        }
+        .TextSection_Body-Serv{
+            font-size: 12px;    
+        vertical-align: top;
+        padding-bottom: 5.44px;
+        }
+        
+    }
+
+}
+.TextField-HOVER-FOCUS{
+    
+    height: 64.44px;
+    .TextField__Field{border: 1px solid rgba(31, 32, 65, 0.5);
+        padding-top: 0px;
+        }
+    .TextField__Text{
+        .TextSection_H3{
+            padding-top: 3px;
+            
+        }
+        .TextSection_Body-Serv{
+            font-size: 12px;    
+        vertical-align: top;
+        padding-top: 2.7px;
+        }
+    }
+
+}
+.TextField_Sub{
+    .TextField__Text{
+    margin-bottom:1px;}
+    .TextField__Field{
+        height:42px;
+
+        max-width: 250px;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+        .TextField__FieldText{border:none;
+            font-family: 'NewMontserrat';
+            color: rgba(31, 32, 65, 0.75);
+            font-size: 14px;
+        }
+        .TextField__FieldIcon{
+            background:url(../../img/svg/arrow_forward.svg) no-repeat; 
+            width: 44px; height: 44px;  
+            border:none;    
+            background-position: center;
+        }
+    }
+}

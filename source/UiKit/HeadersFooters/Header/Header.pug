@@ -1,0 +1,17 @@
+include ../../TextField/TextField.pug
+include ../../ClickButton/ClickButton.pug
+mixin Header(items,itemsLinks,style,buttonsLinks)
+    div(class='Header '+style)
+      a(href="#", class='Header_Logo')
+        img(src=require("../img/svg/ToxinLogo.svg"), alt='OurLogo')
+        ul.Header__Menu 
+          - for (var i=0; i<items.length; i++) {
+            li
+              a(href=itemsLinks[i])
+                +TextSection("Body",items[i]) 
+          - }
+        if(style==='Header_Main')
+          a(href=itemsLinks[0])
+            +ClickButton("Bordered","Clicked","Войти",'HeaderLog')
+          a(href=itemsLinks[1])
+            +ClickButton("Purple","Clicked","Зарегистрироваться",'HeaderReg')

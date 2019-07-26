@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    flex-direction: column ;
+    .SearchRoom__Content{
+        width: inherit;
+        min-height: 1329px;
+        display: flex;
+        background-color: white;
+        padding-left: 95px;
+        padding-top: 29px;
+        .SearchRoom__ContentInterface{
+        margin-top: 50px;
+        width: 150px;
+        
+        .RadioButt{
+            margin-top:10px;
+        }
+        .CheckBoxButtGroup{
+            height: 220px;
+        }
+        }
+        .SearchRoom__ContentProducts{
+            min-width: 1000px;      
+        }
+        .SearchRoom__ContentProducts{
+            padding-left: 51px;
+            padding-top: 7px;
+            
+            .SearchRoom__Products{
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            li{list-style: none;}
+            li .PhotoCard{margin-right: 25px;
+               margin-bottom: 25px;
+            }
+            }
+            .TextSection_H1:first-child{
+                display: block;
+                margin-bottom: 26px;}
+        }
+    }
+    .RadioButtWindow form{
+        display: flex;
+        flex-direction: column;
+    .RadioButtWindow form:first-child{
+        margin-top:10px;
+        }
+        section{
+        margin-bottom: 5px;
+        input{margin-right: 5px;}
+        }
+    }
+ }

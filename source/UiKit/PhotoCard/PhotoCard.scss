@@ -1,0 +1,101 @@
+$PhotoCardInfoheight:150px;
+$PhotoCardPhotoheight:225px;
+$PhotoCardWidth:300px;
+.PhotoCard{
+width: $PhotoCardWidth;
+height: $PhotoCardInfoheight+$PhotoCardPhotoheight;
+    .PhotoCard_PhotoSet
+    {
+        width: $PhotoCardWidth;
+        height: $PhotoCardPhotoheight;
+        display: flex;
+        justify-content: space-between;
+        border-top-left-radius:4px; 
+        border-top-right-radius:4px; 
+        .photo{
+            position: absolute;
+            width: inherit;
+            height: inherit;
+        }
+        // padding-top: 100px;
+        .ControlPanel{
+            max-width: 45px;
+            max-height: 7.5px;
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            margin-right: 12px;
+            // margin-left: auto;
+            
+        }
+        .ControlPanel_Previous{
+            width: 42px;
+            height: 81px;
+            background:linear-gradient(90deg,
+             rgba(0, 0, 0, 0.5),
+            
+             rgba(255, 255, 255, 0) ) no-repeat;
+             padding-top: 100px;
+             padding-left: 14px;
+             img{width: 25px;
+                height: 25px;
+                position: relative;
+                z-index: 2;
+                border-radius: 12.5px;
+                background-color: #8BA4F9;
+            }
+        }
+        .ControlPanelRight{
+            display: flex;
+            flex-direction: column;
+            .addToElite{
+                position: relative;
+                z-index: 1;
+                margin-top: 20px;
+                width: 40px;
+                height: 30px;
+            }
+            .ControlPanel_Next{
+                width: 25px;
+                height: 58px;
+                padding-top: 100px;
+                img{width: 25px;
+                    height: 25px;
+                    position: relative;
+                    z-index: 2;
+                    border-radius: 12.5px;
+                    background-color: #8BA4F9;
+                }
+
+        }
+        background:linear-gradient(90deg,
+        rgba(255, 255, 255, 0) ,
+             rgba(0, 0, 0, 0.5) )
+              no-repeat;
+        background-size: 42px;
+        background-position-x: right;      
+        }
+        .PhotoCardButton{
+            cursor: pointer;
+        }
+    }
+    .PhotoCard_Info{
+        height: $PhotoCardInfoheight;
+        background-color: white;
+        padding-right: 17px;
+        padding-top: 10px;
+        padding-left: 10px;
+        list-style: none;
+        li{
+            font-family: 'NewMontserrat', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: black;
+        }
+    }
+    
+}

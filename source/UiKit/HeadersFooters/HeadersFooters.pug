@@ -1,0 +1,16 @@
+include ../TextField/TextField.pug
+//- include RegisterCard/RegisterCard.pug
+include ../Form-Elements/Form-Elements.pug
+include ./Header/Header.pug
+include ./Footer/Footer.pug
+include ./FooterSimp/FooterSimp.pug
+html(lang="ru")
+    head
+    body
+        .HeadersFooters
+            +Header(['Home','About Us','Services','Careers','News','Documentation'],'Header_Main')
+            +Header(['Home','About Us','Services','Careers','News','Documentation','Cosmin Negoita'],'Header_Personal')
+            //- +Header([['Home','About Us','Services','Careers','News','Documentation'],['','','','','','']])
+            //- +Header([['Home','About Us','Services','Careers','News','Documentation','Cosmin Negoita'],['','','','','','']])
+            +Footer('')
+            +FooterSimp('')
